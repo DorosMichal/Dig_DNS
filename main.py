@@ -57,4 +57,6 @@ def main(domain_name, server_ip, query_type, protocol, trace):
         response = client.run_query(message, server_ip)
         print(response)
 
+    del client
+
 

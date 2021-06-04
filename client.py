@@ -60,13 +60,15 @@ class Client:
                 else:
                     tries += 1
 
-        #if udp didnt work or tcp was chosen
+        ### if udp didnt work or tcp was chosen
         # if self.protocol == "UDP":
         #     self.sock.close()
-        #     self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        #     self.sock = Client._create_socket("TCP")
         # addr = (server_ip, Client.DNS_PORT)
         # try:
         #     self.sock.connect(addr)
         #     _send_query_tcp(domain_name, server_ip, query_type)
         # except socket.error as e:
         #   ...
+
+        ### returns response or None

@@ -20,7 +20,6 @@ parser.add_argument("-p", "--protocol", default="UDP", choices= PROTOCOLS,
 parser.add_argument("--trace", action="store_true")
 
 args = parser.parse_args()
-#print(args.domain, args.server, args.type) ##debug
 
 if __name__ == "__main__":
     main(args.domain, args.server, args.type, args.protocol, args.trace)
